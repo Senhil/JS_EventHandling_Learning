@@ -1,0 +1,45 @@
+<html>
+    <head>
+        Welcome
+       <script>
+           function calc(a)
+           {
+               if(a.elements[1].checked)
+               {
+                   a.result.value=a.Entry.value*2;
+               }
+               else
+               {
+                   a.result.value=a.Entry.value*a.Entry.value;
+               }
+
+           }
+
+       </script>
+    </head>
+    <body>
+        <h1 align="center"> Java Script </h1>
+        <h1 align="center"> Event Handling </h1>
+        <form>
+            <center>
+            <table>
+                <tr><td>Enter the number</td><td><input type="text" value="0" name="Entry"></td></tr>
+                <tr>
+                    <td>
+                    Calculate by
+                    </td>
+                    <td>
+                    <input type="radio" name ="Calculate" onclick="calc(this.form);">Double the Number
+                    <br>
+                    <input type="radio" name ="Calculate" onclick="calc(this.form);">Square the Number
+                </td> 
+                </tr>
+                <tr><td>Answer</td><td><input type="text" name="result" onfocus="this.blur();"></td></tr>
+
+            </table>
+        </center>
+
+        </form>
+    
+    </body>
+</html> 
